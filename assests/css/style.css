@@ -1,0 +1,241 @@
+/* getting rid of default margins */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* global links styling */
+a{ 
+    text-decoration: underline;
+    color: #000;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color:green;
+}
+a:visited{
+    color: yellow;
+}
+
+.button{ 
+    background-color: #4aaaa5;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+.button:hover{
+    background: red;
+    color: #fff;
+}
+.clr{
+    clear: both;
+}
+body{
+    height: 100%;
+    background-image: url(../images/witewall_3.png);
+    color:#777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em; 
+    margin: 0 auto;
+}
+
+.container-form{
+    box-sizing: border-box;
+    width: 960px;
+    background-color: #fff;
+    margin: 30px auto;
+    padding: 30px;
+    border: solid 1px #ddd;
+}
+#main-header{
+    background-color: #fff;
+    width: 100%;
+    border-bottom: solid 2px #ccc;
+}
+
+#main-header h1{
+    display: inline-block;
+    background-color: #4aaaa5;
+    color: #fff;
+    padding: 30px;
+    margin: 0px;    
+}
+#navbar{
+    width: 960px;
+    margin: auto;
+}
+
+#navbar a{
+    color: #777;
+    text-decoration: none;
+    float: right;
+    margin: 0;
+    line-height: 80px;
+    padding: 0px 20px;
+}
+#main-footer{
+    background-color: #666;
+    position: relative;
+    color: #777;
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    border-top: solid 8px teal;
+}
+#main-footer p{
+    position: absolute;
+    left: 45%;
+    bottom: 0;
+}
+.my-form{
+    padding: 0 20px;
+}
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+.my-form label{
+    display: block;
+}
+.my-form input[type="text"], .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+.my-form textarea{
+    padding: 50px;
+}
+ #main-content{
+     background-color: #fff;
+     padding: 30px;
+     width:960px;
+     margin: 30px auto; 
+     border: solid 1px #ddd;
+ }
+
+ h1{
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    color: #4aaaa5;
+ }
+ hr{
+    height: 3px; 
+    background-color: #ccc;
+    border: 0 none;
+    margin-block-start: 2.5em;
+    margin-block-end: 2.5em;  
+ }
+ .float-img{
+     float:left;
+     margin-right: 10px;
+     margin-bottom: 5px;
+     padding: 2px;
+ }
+ #main-layout{
+    background-color: #fff;
+    padding: 30px;
+    width:960px;
+    margin: 30px auto; 
+    border: solid 1px #ddd;
+ }
+
+.row, .row > .column {
+    padding-right: 8px;
+    padding-bottom: 50px;
+  }
+  
+  .column {
+    float: left;
+    width: 35%;
+  }
+  
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .content{
+    position: relative;
+    background-color: white;
+  }
+
+ .text-block {
+    position: absolute;
+    bottom: 30px;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 20px;
+    width: 270px;
+    text-align: center;
+  }
+  /* ---- media queries ---- */
+
+@media screen and (max-width: 640px) {
+    #navbar{
+            margin: auto;
+            text-align:center;
+        }
+    #main-header h1{
+        display: block;
+        padding: 20px;
+    }
+    #navbar a{
+        float: none;
+        padding: 0px 10px;
+        line-height: 40px;
+    }
+    #main-content{
+        width:90%;
+        } 
+    .float-img{
+        float:none;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        padding: 2px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    hr{
+        margin-block-start: .75em;
+        margin-block-end: .75em;  
+     }
+     p {
+        font-size: 12px;
+        margin-top: 0em;
+        margin-bottom: .1em;
+      }
+      #main-layout{
+        width:90%;
+     }
+     .column {
+        float: none;
+      }
+      .container-form{
+        width: 90%;
+
+    }
+     
+}
+
+@media screen and (max-width: 768px) {
+    #main-content{
+        width:90%;
+        } 
+    h1{
+        font-size: 30px;
+    }
+    p {
+        font-size: 12px;
+        margin-top: 0em;
+        margin-bottom: .1em;
+      }
+    .container-form{
+        width: 90%;
+
+}
+@media screen and (max-width: 980px) {
+
+} 
